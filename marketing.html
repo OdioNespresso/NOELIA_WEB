@@ -4,63 +4,69 @@
   <meta charset="UTF-8">
   <title>Easy Culinary – Marketing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header class="header">
-    <img src="assets/logo.png" alt="Easy Culinary Logo" class="logo">
+    <img src="imagenes/logo.png" class="logo">
     <h1>Easy Culinary</h1>
-    <p class="slogan">Porque los pegueños detalles hacen grandes cambios</p>
+    <p class="slogan">Porque los pequeños detalles hacen grandes cambios</p>
   </header>
 
-  <!-- NAV -->
   <nav class="nav">
-    <a href="principal.html">Inicio</a>
+    <a href="index.html">Inicio</a>
     <a href="productos.html">Productos</a>
     <a href="contacto.html">Contacto</a>
     <a href="marketing.html">Marketing</a>
     <a href="carrito.html">Carrito <span class="cart-count">0</span></a>
   </nav>
 
-  <!-- CONTENIDO -->
-  <main style="max-width:1100px; margin:40px auto; padding:0 20px;">
+  <main class="main">
 
     <!-- ESLOGAN -->
-    <section class="sobre" style="padding:40px;">
-      <h2 style="font-size:2rem; text-align:center;">Eslógán oficial</h2>
-      <p style="text-align:center; font-size:1.3rem; margin-top:10px; color:#ff9800; font-weight:700;">
-        “Porque los pegueños detalles hacen grandes cambios”
-      </p>
+    <section class="sobre sobre-box">
+      <h2 class="titulo-centro">Eslogan oficial</h2>
+      <p class="eslogan-marketing">“Porque los pequeños detalles hacen grandes cambios”</p>
     </section>
 
     <!-- ACCIONES DE MARKETING -->
-    <section class="sobre" style="padding:40px; margin-top:30px;">
-      <h2 style="text-align:center; margin-bottom:20px;">Acciones de marketing</h2>
+    <section class="sobre sobre-box">
+      <h2 class="titulo-centro">Acciones de marketing</h2>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px;">
+      <div class="grid marketing-grid">
 
-        <div class="card" style="padding:30px;">
-          <h3 style="margin-bottom:10px;">📱 Redes sociales</h3>
-          <p>Campañas en TikTok, Instagram, YouTube y Twitter con vídeos cortos y humorísticos.</p>
+        <div class="card marketing-card">
+          <h3>Redes sociales</h3>
+          <p>Campañas en TikTok, Instagram y YouTube con vídeos cortos y cercanos.</p>
         </div>
 
-        <div class="card" style="padding:30px;">
-          <h3 style="margin-bottom:10px;">🎥 Vídeo promocional</h3>
-          <p>Un vídeo tipo teletienda mostrando situaciones reales y cómo Easy Culinary las soluciona.</p>
+        <!-- VÍDEO PROMOCIONAL -->
+        <div class="card marketing-card">
+          <h3>Vídeo promocional</h3>
+          <p>Este es el anuncio utilizado para la campaña.</p>
+
+          <div style="text-align:center; margin-top:15px;">
+            <iframe width="100%" height="315"
+              src="https://www.youtube.com/embed/HA9Brf-ozuc"
+              title="YouTube video player"
+              frameborder="0"
+              style="border-radius:15px; box-shadow:0 4px 16px rgba(0,0,0,0.25); max-width:560px;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
 
-        <div class="card" style="padding:30px;">
-          <h3 style="margin-bottom:10px;">📄 Flyers digitales</h3>
-          <p>Diseños modernos con QR para compartir en WhatsApp, Telegram y redes sociales.</p>
+        <div class="card marketing-card">
+          <h3>Flyers digitales</h3>
+          <p>Diseños modernos con código QR para compartir en WhatsApp y redes sociales.</p>
         </div>
 
-        <div class="card" style="padding:30px;">
-          <h3 style="margin-bottom:10px;">🎁 Promociones</h3>
+        <div class="card marketing-card">
+          <h3>Promociones</h3>
           <p>Descuentos de lanzamiento, packs especiales y ofertas temporales.</p>
         </div>
 
@@ -68,58 +74,36 @@
     </section>
 
     <!-- PRESUPUESTO -->
-    <section class="sobre" style="padding:40px; margin-top:30px;">
-      <h2 style="text-align:center; margin-bottom:20px;">Presupuesto estimado</h2>
-
-      <ul style="font-size:1.1rem; line-height:1.8;">
-        <li><strong>Diseño gráfico:</strong> 0–20 € usando herramientas gratuitas.</li>
-        <li><strong>Publicidad mensual:</strong> 30–50 €.</li>
-        <li><strong>Flyers físicos opcionales:</strong> 10–20 €.</li>
-        <li><strong>Producción del vídeo:</strong> 0–10 € (casero, estilo TikTok).</li>
+    <section class="sobre sobre-box">
+      <h2 class="titulo-centro">Presupuesto estimado</h2>
+      <ul class="lista">
+        <li><strong>Diseño gráfico:</strong> 0–20 €</li>
+        <li><strong>Publicidad mensual:</strong> 30–50 €</li>
+        <li><strong>Flyers físicos:</strong> 10–20 €</li>
+        <li><strong>Producción del vídeo:</strong> 0–10 €</li>
       </ul>
     </section>
 
-    <!-- QR -->
-    <section class="sobre" style="padding:40px; margin-top:30px;">
-      <h2 style="text-align:center; margin-bottom:20px;">Código QR</h2>
-      <p style="text-align:center; opacity:0.8; margin-bottom:20px;">
-        Cuando subas tu web a GitHub, aquí podrás colocar el QR real.
-      </p>
+    <!-- QR REAL -->
+    <section class="sobre sobre-box">
+      <h2 class="titulo-centro">Código QR</h2>
+      <p class="texto-centro">Escanea este código para acceder a la web.</p>
 
-      <div style="
-        width:200px;
-        height:200px;
-        margin:auto;
-        border:3px dashed #ff9800;
-        border-radius:20px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size:1.2rem;
-        opacity:0.7;">
-        QR aquí
+      <div style="text-align:center; margin-top:15px;">
+        <img src="imagenes/QR.png" alt="Código QR Easy Culinary"
+             style="width:220px; border-radius:15px; box-shadow:0 4px 16px rgba(0,0,0,0.15);">
       </div>
     </section>
 
     <!-- TARJETA DE VISITA -->
-    <section class="sobre" style="padding:40px; margin-top:30px;">
-      <h2 style="text-align:center; margin-bottom:20px;">Tarjeta de visita</h2>
+    <section class="sobre sobre-box">
+      <h2 class="titulo-centro">Tarjeta de visita</h2>
 
-      <div style="
-        background:#fff;
-        padding:25px;
-        border-radius:20px;
-        box-shadow:0 4px 20px rgba(0,0,0,0.1);
-        max-width:400px;
-        margin:auto;
-        text-align:center;">
-        
-        <img src="assets/logo.png" style="width:90px; margin-bottom:10px;">
-        <h3 style="color:#ff9800; margin-bottom:5px;">Easy Culinary</h3>
-        <p style="opacity:0.8;">Accesorios de cocina prácticos y resistentes</p>
-
-        <hr style="margin:15px 0; opacity:0.3;">
-
+      <div class="tarjeta">
+        <img src="imagenes/logo.png">
+        <h3>Easy Culinary</h3>
+        <p>Accesorios de cocina prácticos y resistentes</p>
+        <hr>
         <p><strong>Email:</strong> contacto@easyculinary.com</p>
         <p><strong>Web:</strong> www.easyculinary.com</p>
       </div>
@@ -127,9 +111,8 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <p>Easy Culinary © Proyecto educativo – Todos los datos son simulados.</p>
+    Easy Culinary © Proyecto educativo – Todos los datos son simulados.
   </footer>
 
   <script src="script.js"></script>
